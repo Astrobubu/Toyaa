@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Toyaa/static/css/main.dc5b584c.css",
+    "main.js": "/Toyaa/static/js/main.7d3429f2.js",
+    "static/js/453.a6f25a82.chunk.js": "/Toyaa/static/js/453.a6f25a82.chunk.js",
+    "static/media/little-girl-reading-book-with-her-teddy-bears.jpg": "/Toyaa/static/media/little-girl-reading-book-with-her-teddy-bears.9c2e38018da3f8655db6.jpg",
+    "static/media/hero.webp": "/Toyaa/static/media/hero.0aec23a54dc7e2f2054b.webp",
+    "static/media/daughter-spending-time-with-her-father-home.webp": "/Toyaa/static/media/daughter-spending-time-with-her-father-home.7d23fc1effbc793491a7.webp",
+    "static/media/why.webp": "/Toyaa/static/media/why.946a6f527a5aa346ef64.webp",
+    "static/media/logo.png": "/Toyaa/static/media/logo.d16049bd9751239061ae.png",
+    "static/media/img.png": "/Toyaa/static/media/img.053d6f0dee5116bb8fc0.png",
+    "static/media/rev3.jpg": "/Toyaa/static/media/rev3.4527aeaf44daf4491ee4.jpg",
+    "static/media/rev1.jpg": "/Toyaa/static/media/rev1.be6c54f70582b95cb254.jpg",
+    "static/media/Happy Child with Teddy Bear.jpg": "/Toyaa/static/media/Happy Child with Teddy Bear.d0ae97404f2af33b3060.jpg",
+    "static/media/rev2.jpg": "/Toyaa/static/media/rev2.c9eb7b867393ee46d522.jpg",
+    "index.html": "/Toyaa/index.html",
+    "main.dc5b584c.css.map": "/Toyaa/static/css/main.dc5b584c.css.map",
+    "main.7d3429f2.js.map": "/Toyaa/static/js/main.7d3429f2.js.map",
+    "453.a6f25a82.chunk.js.map": "/Toyaa/static/js/453.a6f25a82.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc5b584c.css",
+    "static/js/main.7d3429f2.js"
+  ]
+}

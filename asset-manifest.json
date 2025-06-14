@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Toyaa/static/css/main.dc5b584c.css",
-    "main.js": "/Toyaa/static/js/main.7d3429f2.js",
+    "main.js": "/Toyaa/static/js/main.3e91e2d2.js",
     "static/js/453.a6f25a82.chunk.js": "/Toyaa/static/js/453.a6f25a82.chunk.js",
     "static/media/little-girl-reading-book-with-her-teddy-bears.jpg": "/Toyaa/static/media/little-girl-reading-book-with-her-teddy-bears.9c2e38018da3f8655db6.jpg",
     "static/media/hero.webp": "/Toyaa/static/media/hero.0aec23a54dc7e2f2054b.webp",
@@ -15,11 +15,11 @@
     "static/media/rev2.jpg": "/Toyaa/static/media/rev2.c9eb7b867393ee46d522.jpg",
     "index.html": "/Toyaa/index.html",
     "main.dc5b584c.css.map": "/Toyaa/static/css/main.dc5b584c.css.map",
-    "main.7d3429f2.js.map": "/Toyaa/static/js/main.7d3429f2.js.map",
+    "main.3e91e2d2.js.map": "/Toyaa/static/js/main.3e91e2d2.js.map",
     "453.a6f25a82.chunk.js.map": "/Toyaa/static/js/453.a6f25a82.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc5b584c.css",
-    "static/js/main.7d3429f2.js"
+    "static/js/main.3e91e2d2.js"
   ]
 }

@@ -48,7 +48,7 @@ export default function HowItWorksPage() {
       <main className="pt-24">
         {/* Hero */}
         <section className="bg-gradient-to-r from-[#f5b800] to-[#ffca1c] py-20 px-4 text-center">
-          <h1 className="text-5xl font-extrabold text-[#2d1b69] mb-4">
+          <h1 className="text-5xl font-extrabold text-[#2d1b69] mb-4 hover:scale-105 transition-transform duration-300">
             How Toya Works
           </h1>
           <p className="text-xl text-[#2d1b69] max-w-2xl mx-auto opacity-80">
@@ -64,18 +64,18 @@ export default function HowItWorksPage() {
             return (
               <div
                 key={step.number}
-                className={`flex items-center gap-8 py-8 ${
+                className={`group hover-lift flex items-center gap-8 py-8 ${
                   isEven ? "lg:flex-row-reverse" : "flex-row"
                 }`}
               >
                 {/* Numbered circle */}
-                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#2d1b69] text-white flex items-center justify-center text-2xl font-bold">
+                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#2d1b69] text-white flex items-center justify-center text-2xl font-bold group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                   {step.number}
                 </div>
 
                 {/* Content */}
                 <div>
-                  <h3 className="font-bold text-xl text-[#2d1b69] mb-2">
+                  <h3 className="font-bold text-xl text-[#2d1b69] mb-2 group-hover:text-[#e8453a] transition-colors duration-300">
                     {step.title}
                   </h3>
                   <p className="text-gray-600">{step.description}</p>
@@ -87,10 +87,10 @@ export default function HowItWorksPage() {
 
         {/* CTA */}
         <section className="bg-[#2d1b69] text-white py-16 text-center px-4">
-          <h2 className="text-4xl font-extrabold mb-6">Ready to Meet Toya?</h2>
+          <h2 className="text-4xl font-extrabold mb-6 hover:scale-105 transition-transform duration-300">Ready to Meet Toya?</h2>
           <a
             href="#products"
-            className="inline-block bg-[#e8453a] px-8 py-4 rounded-2xl font-bold text-lg hover:bg-red-600 transition-colors"
+            className="inline-block bg-[#e8453a] px-8 py-4 rounded-2xl font-bold text-lg hover:bg-red-600 transition-colors animate-pulse-glow"
           >
             Shop Now
           </a>

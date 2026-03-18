@@ -84,7 +84,7 @@ export default function BlogsPage() {
       <main className="pt-24">
         {/* Header */}
         <section className="py-12 px-4 text-center">
-          <h1 className="text-4xl font-extrabold text-[#2d1b69]">
+          <h1 className="text-4xl font-extrabold text-[#2d1b69] hover:scale-105 transition-transform duration-300">
             The Toya Blog
           </h1>
           <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
@@ -99,7 +99,7 @@ export default function BlogsPage() {
             {posts.map((post, index) => (
               <article
                 key={index}
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition"
+                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition hover-lift"
               >
                 {/* Image with tag badge */}
                 <div className="relative h-52">
@@ -107,9 +107,9 @@ export default function BlogsPage() {
                     src={post.image}
                     alt={post.title}
                     fill
-                    className="object-cover"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-3 left-3 bg-[#2d1b69] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="absolute top-3 left-3 bg-[#2d1b69] text-white text-xs font-semibold px-3 py-1 rounded-full hover:scale-110 transition-transform duration-200">
                     {post.tag}
                   </span>
                 </div>
@@ -117,7 +117,7 @@ export default function BlogsPage() {
                 {/* Content */}
                 <div className="p-6">
                   <p className="text-xs text-gray-400 mb-2">{post.date}</p>
-                  <h2 className="text-lg font-bold text-[#2d1b69] mb-2 leading-snug">
+                  <h2 className="text-lg font-bold text-[#2d1b69] mb-2 leading-snug group-hover:text-[#e8453a] transition-colors">
                     {post.title}
                   </h2>
                   <p className="text-sm text-gray-600 mb-4">
@@ -127,7 +127,7 @@ export default function BlogsPage() {
                     href="#"
                     className="text-sm font-semibold text-[#2d1b69] hover:underline"
                   >
-                    Read More →
+                    <span className="group-hover:translate-x-1 transition-transform inline-block">Read More →</span>
                   </a>
                 </div>
               </article>

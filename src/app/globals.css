@@ -1,26 +1,32 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap');
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-toya-navy: #1b1464;
+  --color-toya-red: #e53e3e;
+  --color-toya-pink: #fad9e0;
+  --color-toya-peach: #fdb698;
+  --color-toya-yellow: #ffd22c;
+  --color-toya-blue: #8acdea;
+  --color-toya-green: #c4dfd7;
+  --color-toya-gold: #fcc612;
+  --font-sora: 'Sora', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sora);
+  color: #1b1464;
+  background: #ffffff;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

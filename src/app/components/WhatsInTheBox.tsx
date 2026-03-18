@@ -22,7 +22,7 @@ export default function WhatsInTheBox() {
               key={item.label}
               className="bg-white rounded-2xl p-6 text-center w-36 shadow-sm"
             >
-              <div className="text-3xl mb-3">{item.emoji}</div>
+              <div className="text-3xl mb-3 animate-bounce-soft">{item.emoji}</div>
               <div className="font-semibold text-[#1b1464] text-sm">{item.label}</div>
             </div>
           ))}

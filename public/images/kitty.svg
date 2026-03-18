@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="200" fill="#9BB0C8"/>
+
+  <!-- Pointy ears (outer) -->
+  <polygon points="118,148 80,52 158,112" fill="#7A96B0"/>
+  <polygon points="282,148 320,52 242,112" fill="#7A96B0"/>
+
+  <!-- Pointy ears (inner) -->
+  <polygon points="120,140 92,72 152,116" fill="#E8D0DC"/>
+  <polygon points="280,140 308,72 248,116" fill="#E8D0DC"/>
+
+  <!-- Face circle -->
+  <circle cx="200" cy="222" r="150" fill="#E8EEF4"/>
+
+  <!-- Eyes - cat-shaped -->
+  <ellipse cx="160" cy="192" rx="24" ry="20" fill="#4A8A5A"/>
+  <ellipse cx="240" cy="192" rx="24" ry="20" fill="#4A8A5A"/>
+  <!-- Pupils (vertical slit) -->
+  <ellipse cx="160" cy="192" rx="8" ry="18" fill="#1A1A2E"/>
+  <ellipse cx="240" cy="192" rx="8" ry="18" fill="#1A1A2E"/>
+  <!-- Eye shine -->
+  <circle cx="167" cy="185" r="6" fill="white"/>
+  <circle cx="247" cy="185" r="6" fill="white"/>
+
+  <!-- Snout -->
+  <ellipse cx="200" cy="255" rx="40" ry="30" fill="#D8C8D0"/>
+
+  <!-- Nose (triangle) -->
+  <polygon points="200,240 190,254 210,254" fill="#D06080"/>
+
+  <!-- Mouth -->
+  <path d="M190 256 Q200 270 210 256" stroke="#D06080" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <line x1="200" y1="254" x2="200" y2="260" stroke="#D06080" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Whiskers left -->
+  <line x1="88" y1="248" x2="172" y2="256" stroke="#9AA8B8" stroke-width="2.5"/>
+  <line x1="88" y1="262" x2="172" y2="263" stroke="#9AA8B8" stroke-width="2.5"/>
+  <line x1="88" y1="276" x2="172" y2="270" stroke="#9AA8B8" stroke-width="2.5"/>
+
+  <!-- Whiskers right -->
+  <line x1="312" y1="248" x2="228" y2="256" stroke="#9AA8B8" stroke-width="2.5"/>
+  <line x1="312" y1="262" x2="228" y2="263" stroke="#9AA8B8" stroke-width="2.5"/>
+  <line x1="312" y1="276" x2="228" y2="270" stroke="#9AA8B8" stroke-width="2.5"/>
+
+  <!-- Rosy cheeks -->
+  <circle cx="136" cy="260" r="22" fill="#D08090" opacity="0.28"/>
+  <circle cx="264" cy="260" r="22" fill="#D08090" opacity="0.28"/>
+</svg>

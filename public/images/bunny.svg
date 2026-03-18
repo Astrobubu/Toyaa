@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="200" fill="#F4A7C3"/>
+
+  <!-- Ears (outer) -->
+  <ellipse cx="140" cy="82" rx="34" ry="72" fill="#F9D0E2"/>
+  <ellipse cx="260" cy="82" rx="34" ry="72" fill="#F9D0E2"/>
+
+  <!-- Ears (inner) -->
+  <ellipse cx="140" cy="82" rx="20" ry="54" fill="#F4A7C3"/>
+  <ellipse cx="260" cy="82" rx="20" ry="54" fill="#F4A7C3"/>
+
+  <!-- Face circle -->
+  <circle cx="200" cy="225" r="148" fill="#FFF0F5"/>
+
+  <!-- Eyes -->
+  <circle cx="160" cy="192" r="21" fill="#A855A8"/>
+  <circle cx="240" cy="192" r="21" fill="#A855A8"/>
+  <!-- Eye shine -->
+  <circle cx="167" cy="185" r="7" fill="white"/>
+  <circle cx="247" cy="185" r="7" fill="white"/>
+
+  <!-- Snout -->
+  <ellipse cx="200" cy="258" rx="44" ry="32" fill="#F9D0E2"/>
+
+  <!-- Nose -->
+  <ellipse cx="200" cy="246" rx="12" ry="9" fill="#E06090"/>
+
+  <!-- Mouth -->
+  <path d="M188 258 Q200 275 212 258" stroke="#E06090" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Whiskers left -->
+  <line x1="100" y1="252" x2="170" y2="258" stroke="#C890B0" stroke-width="2.5" opacity="0.7"/>
+  <line x1="100" y1="265" x2="170" y2="265" stroke="#C890B0" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- Whiskers right -->
+  <line x1="300" y1="252" x2="230" y2="258" stroke="#C890B0" stroke-width="2.5" opacity="0.7"/>
+  <line x1="300" y1="265" x2="230" y2="265" stroke="#C890B0" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- Rosy cheeks -->
+  <circle cx="138" cy="248" r="22" fill="#F06090" opacity="0.3"/>
+  <circle cx="262" cy="248" r="22" fill="#F06090" opacity="0.3"/>
+</svg>

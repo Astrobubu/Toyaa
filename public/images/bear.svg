@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="200" fill="#C8874A"/>
+
+  <!-- Ears (outer) -->
+  <circle cx="105" cy="110" r="52" fill="#A0622A"/>
+  <circle cx="295" cy="110" r="52" fill="#A0622A"/>
+
+  <!-- Ears (inner) -->
+  <circle cx="105" cy="110" r="32" fill="#E8A96A"/>
+  <circle cx="295" cy="110" r="32" fill="#E8A96A"/>
+
+  <!-- Face circle -->
+  <circle cx="200" cy="220" r="145" fill="#E8A96A"/>
+
+  <!-- Eyes -->
+  <circle cx="158" cy="185" r="22" fill="#3B1F0A"/>
+  <circle cx="242" cy="185" r="22" fill="#3B1F0A"/>
+  <!-- Eye shine -->
+  <circle cx="165" cy="178" r="7" fill="white"/>
+  <circle cx="249" cy="178" r="7" fill="white"/>
+
+  <!-- Snout -->
+  <ellipse cx="200" cy="255" rx="48" ry="36" fill="#C8874A"/>
+
+  <!-- Nose -->
+  <ellipse cx="200" cy="242" rx="16" ry="11" fill="#3B1F0A"/>
+
+  <!-- Mouth -->
+  <path d="M186 260 Q200 278 214 260" stroke="#3B1F0A" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Rosy cheeks -->
+  <circle cx="135" cy="248" r="22" fill="#E07070" opacity="0.35"/>
+  <circle cx="265" cy="248" r="22" fill="#E07070" opacity="0.35"/>
+</svg>

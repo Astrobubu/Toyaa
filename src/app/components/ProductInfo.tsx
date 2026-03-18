@@ -89,7 +89,7 @@ export default function ProductInfo() {
       </div>
 
       {/* Shop Now Button */}
-      <button className="w-full bg-[#e53e3e] text-white font-bold text-lg py-4 rounded-2xl hover:bg-red-600 transition-colors">
+      <button className="w-full bg-[#e53e3e] text-white font-bold text-lg py-4 rounded-2xl hover:bg-red-600 transition-colors animate-pulse-glow">
         Shop Now
       </button>
     </div>

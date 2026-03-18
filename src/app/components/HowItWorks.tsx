@@ -48,7 +48,7 @@ export default function HowItWorks() {
           {steps.map((step) => (
             <div
               key={step.number}
-              className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition"
+              className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition hover-lift"
             >
               <div className="text-5xl font-extrabold text-[#fdb698]/50">
                 {step.number}

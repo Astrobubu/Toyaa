@@ -10,6 +10,7 @@ import Reviews from "./components/Reviews";
 import ToyaOS from "./components/ToyaOS";
 import RelatedProducts from "./components/RelatedProducts";
 import BlogPreview from "./components/BlogPreview";
+import ParentalFeatures from "./components/ParentalFeatures";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
         <WhatsInTheBox />
         <HowItWorks />
         <WhyChooseUs />
+        <ParentalFeatures />
         <Reviews />
         <ToyaOS />
         <RelatedProducts />

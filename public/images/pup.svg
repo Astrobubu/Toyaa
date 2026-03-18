@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="200" fill="#D4A843"/>
+
+  <!-- Floppy ears -->
+  <ellipse cx="108" cy="175" rx="48" ry="70" fill="#A07828" transform="rotate(-15 108 175)"/>
+  <ellipse cx="292" cy="175" rx="48" ry="70" fill="#A07828" transform="rotate(15 292 175)"/>
+
+  <!-- Face circle -->
+  <circle cx="200" cy="210" r="148" fill="#F0CC78"/>
+
+  <!-- Eyes -->
+  <circle cx="162" cy="178" r="23" fill="#3B2008"/>
+  <circle cx="238" cy="178" r="23" fill="#3B2008"/>
+  <!-- Eye shine -->
+  <circle cx="170" cy="170" r="8" fill="white"/>
+  <circle cx="246" cy="170" r="8" fill="white"/>
+
+  <!-- Snout / muzzle area -->
+  <ellipse cx="200" cy="262" rx="56" ry="42" fill="#E8B850"/>
+
+  <!-- Nose -->
+  <ellipse cx="200" cy="245" rx="20" ry="15" fill="#3B2008"/>
+  <!-- Nose highlight -->
+  <ellipse cx="194" cy="241" rx="6" ry="4" fill="#5A3010" opacity="0.5"/>
+
+  <!-- Mouth -->
+  <path d="M185 263 Q200 283 215 263" stroke="#3B2008" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <line x1="200" y1="260" x2="200" y2="270" stroke="#3B2008" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Rosy cheeks -->
+  <circle cx="132" cy="258" r="24" fill="#E07030" opacity="0.3"/>
+  <circle cx="268" cy="258" r="24" fill="#E07030" opacity="0.3"/>
+
+  <!-- Ear inner detail -->
+  <ellipse cx="108" cy="175" rx="28" ry="50" fill="#C09040" transform="rotate(-15 108 175)"/>
+  <ellipse cx="292" cy="175" rx="28" ry="50" fill="#C09040" transform="rotate(15 292 175)"/>
+</svg>

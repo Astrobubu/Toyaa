@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="bg-white rounded-2xl p-8 hover:shadow-lg transition"
+              className="bg-white rounded-2xl p-8 hover:shadow-lg transition hover-tilt"
             >
               <div className="text-3xl mb-4">{feature.emoji}</div>
               <h3 className="font-bold text-[#1b1464] text-lg mb-2">{feature.title}</h3>

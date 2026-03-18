@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="200" fill="#7B5EA7"/>
+
+  <!-- Ear tufts -->
+  <ellipse cx="148" cy="90" rx="26" ry="44" fill="#5A4080" transform="rotate(-18 148 90)"/>
+  <ellipse cx="252" cy="90" rx="26" ry="44" fill="#5A4080" transform="rotate(18 252 90)"/>
+
+  <!-- Face disc (owl facial disc) -->
+  <circle cx="200" cy="218" r="150" fill="#C8A870"/>
+
+  <!-- Inner facial disc -->
+  <ellipse cx="200" cy="225" rx="118" ry="125" fill="#E8CC90"/>
+
+  <!-- Left eye area -->
+  <circle cx="163" cy="195" r="44" fill="white"/>
+  <!-- Right eye area -->
+  <circle cx="237" cy="195" r="44" fill="white"/>
+
+  <!-- Eye rings -->
+  <circle cx="163" cy="195" r="38" fill="#5A4080"/>
+  <circle cx="237" cy="195" r="38" fill="#5A4080"/>
+
+  <!-- Irises -->
+  <circle cx="163" cy="195" r="28" fill="#F0C030"/>
+  <circle cx="237" cy="195" r="28" fill="#F0C030"/>
+
+  <!-- Pupils -->
+  <circle cx="163" cy="195" r="14" fill="#1A1A2E"/>
+  <circle cx="237" cy="195" r="14" fill="#1A1A2E"/>
+
+  <!-- Eye shine -->
+  <circle cx="170" cy="187" r="6" fill="white"/>
+  <circle cx="244" cy="187" r="6" fill="white"/>
+
+  <!-- Beak -->
+  <polygon points="200,228 186,248 214,248" fill="#E07830"/>
+  <polygon points="200,235 188,248 212,248" fill="#C06020"/>
+
+  <!-- Facial disc outline detail -->
+  <ellipse cx="200" cy="225" rx="118" ry="125" fill="none" stroke="#C8A870" stroke-width="8"/>
+
+  <!-- Rosy cheeks -->
+  <circle cx="138" cy="255" r="20" fill="#E07040" opacity="0.28"/>
+  <circle cx="262" cy="255" r="20" fill="#E07040" opacity="0.28"/>
+
+  <!-- Wing hints at bottom -->
+  <ellipse cx="120" cy="340" rx="55" ry="32" fill="#5A4080" transform="rotate(-20 120 340)"/>
+  <ellipse cx="280" cy="340" rx="55" ry="32" fill="#5A4080" transform="rotate(20 280 340)"/>
+</svg>

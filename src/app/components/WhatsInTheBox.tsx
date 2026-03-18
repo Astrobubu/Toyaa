@@ -1,31 +1,99 @@
+"use client";
+import Image from "next/image";
+import { useState } from "react";
+
 const items = [
-  { emoji: "🔌", label: "Adapter & Cable" },
-  { emoji: "🧸", label: "Toya Plush Doll" },
-  { emoji: "📦", label: "Toya Voice Box™" },
-  { emoji: "⭐", label: "Collectible Stickers" },
-  { emoji: "❤️", label: "A Whole Lot of Love" },
+  {
+    title: "Toya Smart Plush",
+    desc: "A soft, cuddly plush toy made with child-safe, non-toxic materials. Machine-washable once you remove the Voice Box. Built to survive countless hugs and adventures.",
+    img: "/images/hero-2.jpg",
+  },
+  {
+    title: "Toya Voice Box\u2122",
+    desc: "The brain of Toya \u2014 a compact, cloud-connected module that slides into a hidden pocket inside the plush. Contains the processor, speaker, microphone, and rechargeable battery.",
+    img: "/images/why.png",
+  },
+  {
+    title: "USB-C Cable & Adapter",
+    desc: "Everything you need to keep Toya charged and ready. A full charge via USB-C gives hours of uninterrupted playtime. Just plug in, charge up, and go.",
+    img: "/images/hero-4.webp",
+  },
+  {
+    title: "Quick Start Guide",
+    desc: "A simple, illustrated guide to get you set up in minutes. From inserting the Voice Box to pairing the app \u2014 we made it foolproof.",
+    img: "/images/father-daughter.webp",
+  },
+  {
+    title: "Collectible Stickers",
+    desc: "A sheet of fun Toya character stickers for your child to decorate their stuff. Because every unboxing should feel special.",
+    img: "/images/hero-3.jpg",
+  },
 ];
 
 export default function WhatsInTheBox() {
+  const [active, setActive] = useState(0);
+
   return (
-    <section className="py-20 px-4 bg-[#fad9e0]/30">
+    <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#1b1464] text-center mb-4">
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#2d1b69] text-center mb-4">
           What&apos;s in the Box
         </h2>
         <p className="text-center text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
-          Inside, you&apos;ll find an Adapter, Cable, Plush Toy, Toya Voice Box™, Collectible Stickers, and a Whole Lot of Love!
+          Everything you need for your child&apos;s new best friend, right out of the box.
         </p>
-        <div className="flex flex-wrap justify-center gap-6">
-          {items.map((item) => (
-            <div
-              key={item.label}
-              className="bg-white rounded-2xl p-6 text-center w-36 shadow-sm"
-            >
-              <div className="text-3xl mb-3 animate-bounce-soft">{item.emoji}</div>
-              <div className="font-semibold text-[#1b1464] text-sm">{item.label}</div>
-            </div>
-          ))}
+
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+          {/* Left: Image */}
+          <div className="relative aspect-square rounded-2xl overflow-hidden bg-white shadow-sm mb-8 lg:mb-0">
+            <Image
+              src={items[active].img}
+              alt={items[active].title}
+              fill
+              className="object-cover transition-all duration-500"
+            />
+          </div>
+
+          {/* Right: Item list */}
+          <div className="space-y-3">
+            {items.map((item, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`w-full text-left p-5 rounded-2xl transition-all duration-300 ${
+                  active === i
+                    ? "bg-white shadow-md border-l-4 border-[#e8453a]"
+                    : "bg-transparent hover:bg-white/50"
+                }`}
+              >
+                <div className="flex items-center gap-4">
+                  <div
+                    className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${
+                      active === i
+                        ? "bg-[#e8453a] text-white"
+                        : "bg-gray-200 text-gray-500"
+                    }`}
+                  >
+                    {i + 1}
+                  </div>
+                  <div>
+                    <h3
+                      className={`font-bold text-lg ${
+                        active === i ? "text-[#2d1b69]" : "text-gray-500"
+                      }`}
+                    >
+                      {item.title}
+                    </h3>
+                    {active === i && (
+                      <p className="text-gray-600 text-sm mt-1 leading-relaxed">
+                        {item.desc}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const products = [
-  { name: "Toya Bear", price: 99, color: "bg-[#fdb698]", img: "/images/bear.svg" },
-  { name: "Toya Bunny", price: 119, color: "bg-[#fad9e0]", img: "/images/bunny.svg" },
-  { name: "Toya Pup", price: 99, color: "bg-[#8acdea]", img: "/images/pup.svg" },
+  { name: "Toya Bear", price: 99, color: "bg-[#fdb698]", img: "/images/logo.png" },
+  { name: "Toya Bunny", price: 119, color: "bg-[#fad9e0]", img: "/images/bunny-real.jpg" },
+  { name: "Toya Pup", price: 99, color: "bg-[#8acdea]", img: "/images/pup-real.jpg" },
   { name: "Toya Kitty", price: 119, color: "bg-[#c4dfd7]", img: "/images/kitty.svg" },
   { name: "Toya Owl", price: 149, color: "bg-[#fcc612]/40", img: "/images/owl.svg" },
 ];

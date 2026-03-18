@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Toya - Your Child's Smart Best Friend",
   description:
     "The smart doll that talks, learns, and grows with your child. Interactive conversations, learning experiences, and endless fun.",
+  icons: {
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({

@@ -32,10 +32,28 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="#products"
+              href="/about"
               className="text-toya-navy font-medium hover:text-toya-red transition-colors"
             >
-              Store
+              About
+            </Link>
+            <Link
+              href="/how-it-works"
+              className="text-toya-navy font-medium hover:text-toya-red transition-colors"
+            >
+              How It Works
+            </Link>
+            <Link
+              href="/blogs"
+              className="text-toya-navy font-medium hover:text-toya-red transition-colors"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/contact"
+              className="text-toya-navy font-medium hover:text-toya-red transition-colors"
+            >
+              Contact
             </Link>
           </div>
 
@@ -112,20 +130,11 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-4 flex flex-col gap-4">
-          <Link
-            href="/"
-            className="text-toya-navy font-medium hover:text-toya-red transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            href="#products"
-            className="text-toya-navy font-medium hover:text-toya-red transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
-            Store
-          </Link>
+          <Link href="/" className="text-toya-navy font-medium hover:text-toya-red transition-colors" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link href="/about" className="text-toya-navy font-medium hover:text-toya-red transition-colors" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/how-it-works" className="text-toya-navy font-medium hover:text-toya-red transition-colors" onClick={() => setMenuOpen(false)}>How It Works</Link>
+          <Link href="/blogs" className="text-toya-navy font-medium hover:text-toya-red transition-colors" onClick={() => setMenuOpen(false)}>Blog</Link>
+          <Link href="/contact" className="text-toya-navy font-medium hover:text-toya-red transition-colors" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}
     </nav>

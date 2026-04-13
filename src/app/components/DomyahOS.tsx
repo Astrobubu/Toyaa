@@ -1,16 +1,23 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function DomyahOS() {
+  const { lang } = useLanguage();
+
   return (
     <section className="py-20 px-4 bg-[#c4dfd7]/30">
       <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 items-center">
         {/* Left column */}
         <div>
           <h2 className="text-3xl lg:text-4xl font-extrabold text-[#1b1464] mb-6">
-            Domyah OS™
+            {lang === 'ar' ? 'نظام تشغيل دمية™' : 'Domyah OS™'}
           </h2>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Powered by our proprietary Domyah OS™, every conversation is safe, age-appropriate, and designed to spark curiosity. Our system learns your child&apos;s interests and adapts to provide the most engaging and educational experience possible.
+            {lang === 'ar' 
+              ? 'مدعوم بنظام تشغيل دمية™ الخاص بنا، كل محادثة آمنة ومناسبة للعمر ومصممة لإثارة الفضول. يتعلم نظامنا اهتمامات طفلك ويتكيف لتقديم تجربة تعليمية شيقة.' 
+              : "Powered by our proprietary Domyah OS™, every conversation is safe, age-appropriate, and designed to spark curiosity. Our system learns your child's interests and adapts to provide the most engaging and educational experience possible."}
           </p>
           {/* Safety & Learning */}
           <div className="flex items-center gap-4 bg-white rounded-2xl p-4 w-fit">
@@ -29,8 +36,10 @@ export default function DomyahOS() {
               </svg>
             </div>
             <div>
-              <p className="font-bold text-[#1b1464]">Safe Learning</p>
-              <p className="text-sm text-gray-500">Filtered and monitored content for peace of mind</p>
+              <p className="font-bold text-[#1b1464]">{lang === 'ar' ? 'تعلم آمن' : 'Safe Learning'}</p>
+              <p className="text-sm text-gray-500">
+                {lang === 'ar' ? 'محتوى مفلتر ومراقب لراحة بالك' : 'Filtered and monitored content for peace of mind'}
+              </p>
             </div>
           </div>
         </div>
@@ -39,7 +48,7 @@ export default function DomyahOS() {
         <div className="mt-8 lg:mt-0">
           <Image
             src="/images/why.png"
-            alt="Domyah OS"
+            alt={lang === 'ar' ? 'نظام تشغيل دمية' : 'Domyah OS'}
             width={500}
             height={500}
             className="rounded-[2rem]"

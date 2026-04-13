@@ -1,4 +1,8 @@
-const features = [
+"use client";
+
+import { useLanguage } from "../context/LanguageContext";
+
+const featuresEn = [
   {
     icon: (
       <svg className="w-8 h-8 text-[#2d1b69]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
@@ -43,12 +47,48 @@ const features = [
   },
 ];
 
+const featuresAr = [
+  {
+    icon: featuresEn[0].icon,
+    title: "التعلم التفاعلي",
+    description: "تدمج دمية بين المرح والتعليم، وتساعد الأطفال على التعلم أثناء اللعب.",
+  },
+  {
+    icon: featuresEn[1].icon,
+    title: "تجربة مخصصة",
+    description: "تفاعلات مخصصة تتكيف مع شخصية طفلك ونموه.",
+  },
+  {
+    icon: featuresEn[2].icon,
+    title: "آمن ومحمي",
+    description: "صُممت بأعلى مستويات الخصوصية والأمان لسلامة طفلك.",
+  },
+  {
+    icon: featuresEn[3].icon,
+    title: "تنمو مع طفلك",
+    description: "تتطور دمية مع محتوى جديد كلما تطور طفلك.",
+  },
+  {
+    icon: featuresEn[4].icon,
+    title: "تحكم أبوي سهل",
+    description: "تتيح ضوابط التطبيق البسيطة للآباء تخصيص ومراقبة وقت اللعب.",
+  },
+  {
+    icon: featuresEn[5].icon,
+    title: "التطور العاطفي",
+    description: "تعزز التعاطف والتواصل من خلال المحادثات الشيقة.",
+  },
+];
+
 export default function WhyChooseUs() {
+  const { lang } = useLanguage();
+  const features = lang === 'ar' ? featuresAr : featuresEn;
+
   return (
     <section className="py-20 px-4 bg-[#8acdea]/20">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl lg:text-4xl font-extrabold text-[#1b1464] text-center mb-12">
-          Why Choose Domyah?
+          {lang === 'ar' ? 'لماذا تختار دمية؟' : 'Why Choose Domyah?'}
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature) => (

@@ -55,8 +55,11 @@ export default function Navbar() {
               </div>
 
               <div className="flex items-center gap-4">
-              <button onClick={toggleLang} className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors">
-                {lang === 'ar' ? 'EN' : 'العربية'}
+              <button 
+                onClick={toggleLang} 
+                className="flex items-center justify-center gap-1 bg-[#fcc612] text-[#1b1464] px-3 py-1.5 rounded-full font-bold text-sm hover:bg-[#1b1464] hover:text-white transition-colors shadow-sm"
+              >
+                {lang === 'ar' ? 'English' : 'عربي'}
               </button>
               {/* Cart Icon */}
               <button

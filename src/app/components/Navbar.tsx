@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "../context/CartContext";
+import { useLanguage } from "../context/LanguageContext";
 import CartDrawer from "./CartDrawer";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const { cartCount } = useCart();
+  const { lang, toggleLang } = useLanguage();
 
   useEffect(() => {
     const handleOpenCart = () => setCartOpen(true);
@@ -24,8 +26,12 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16 relative">
             {/* Left Nav Links */}
             <div className="hidden md:flex items-center gap-8 pl-8">
-              <Link href="/about" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors hover-lift">About & Contact</Link>
-              <Link href="/product" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors hover-lift">Products</Link>
+              <Link href="/about" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors hover-lift">
+                {lang === 'ar' ? 'من نحن واتصل بنا' : 'About & Contact'}
+              </Link>
+              <Link href="/product" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors hover-lift">
+                {lang === 'ar' ? 'المنتجات' : 'Products'}
+              </Link>
             </div>
 
             {/* Logo + Brand (Centered) */}
@@ -43,11 +49,15 @@ export default function Navbar() {
             {/* Right side: Right Links + Cart + Hamburger */}
             <div className="flex items-center justify-end gap-8 pr-8">
               <div className="hidden md:flex items-center gap-8">
-                <Link href="/blogs" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors hover-lift">Blog</Link>
+                <Link href="/blogs" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors hover-lift">
+                  {lang === 'ar' ? 'المدونة' : 'Blog'}
+                </Link>
               </div>
 
               <div className="flex items-center gap-4">
-              <div id="google_translate_element" className="mr-2"></div>
+              <button onClick={toggleLang} className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors">
+                {lang === 'ar' ? 'EN' : 'العربية'}
+              </button>
               {/* Cart Icon */}
               <button
                 aria-label="Shopping cart"
@@ -100,10 +110,18 @@ export default function Navbar() {
         {/* Mobile Dropdown Menu */}
         {menuOpen && (
           <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-4 flex flex-col gap-4 animate-slide-right">
-            <Link href="/" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors" onClick={() => setMenuOpen(false)}>Home</Link>
-            <Link href="/about" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors" onClick={() => setMenuOpen(false)}>About & Contact</Link>
-            <Link href="/product" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors" onClick={() => setMenuOpen(false)}>Products</Link>
-            <Link href="/blogs" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors" onClick={() => setMenuOpen(false)}>Blog</Link>
+            <Link href="/" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors" onClick={() => setMenuOpen(false)}>
+              {lang === 'ar' ? 'الرئيسية' : 'Home'}
+            </Link>
+            <Link href="/about" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors" onClick={() => setMenuOpen(false)}>
+              {lang === 'ar' ? 'من نحن واتصل بنا' : 'About & Contact'}
+            </Link>
+            <Link href="/product" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors" onClick={() => setMenuOpen(false)}>
+              {lang === 'ar' ? 'المنتجات' : 'Products'}
+            </Link>
+            <Link href="/blogs" className="text-[#1b1464] font-medium hover:text-[#e8453a] transition-colors" onClick={() => setMenuOpen(false)}>
+              {lang === 'ar' ? 'المدونة' : 'Blog'}
+            </Link>
           </div>
         )}
       </nav>

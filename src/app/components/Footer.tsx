@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Footer() {
+  const { lang } = useLanguage();
+
   return (
     <footer className="bg-[#1b1464] text-white py-16 px-4">
       <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
@@ -18,27 +23,29 @@ export default function Footer() {
             <span className="text-xl font-bold">Domyah</span>
           </div>
           <p className="text-gray-400 text-sm">
-            Your child&apos;s smart best friend that talks, learns, and grows with them.
+            {lang === 'ar' 
+              ? "صديق طفلك الذكي الذي يتحدث ويتعلم وينمو معه." 
+              : "Your child's smart best friend that talks, learns, and grows with them."}
           </p>
         </div>
 
         {/* Column 2 - About Us */}
         <div>
-          <h4 className="font-bold mb-4">About Us</h4>
+          <h4 className="font-bold mb-4">{lang === 'ar' ? 'معلومات عنا' : 'About Us'}</h4>
           <ul className="space-y-2 text-gray-400 text-sm">
             <li>
               <Link href="#" className="hover:text-white transition">
-                Our Story
+                {lang === 'ar' ? 'قصتنا' : 'Our Story'}
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-white transition">
-                FAQs
+                {lang === 'ar' ? 'الأسئلة الشائعة' : 'FAQs'}
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-white transition">
-                Contact Us
+                {lang === 'ar' ? 'اتصل بنا' : 'Contact Us'}
               </Link>
             </li>
           </ul>
@@ -46,16 +53,16 @@ export default function Footer() {
 
         {/* Column 3 - Grown Up Stuff */}
         <div>
-          <h4 className="font-bold mb-4">Grown Up Stuff</h4>
+          <h4 className="font-bold mb-4">{lang === 'ar' ? 'أشياء للكبار' : 'Grown Up Stuff'}</h4>
           <ul className="space-y-2 text-gray-400 text-sm">
             <li>
               <Link href="#" className="hover:text-white transition">
-                Privacy Policy
+                {lang === 'ar' ? 'سياسة الخصوصية' : 'Privacy Policy'}
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-white transition">
-                Terms &amp; Conditions
+                {lang === 'ar' ? 'الشروط والأحكام' : 'Terms & Conditions'}
               </Link>
             </li>
           </ul>
@@ -63,13 +70,13 @@ export default function Footer() {
 
         {/* Column 4 - Download App */}
         <div>
-          <h4 className="font-bold mb-4">Download App</h4>
+          <h4 className="font-bold mb-4">{lang === 'ar' ? 'حمل التطبيق' : 'Download App'}</h4>
           <div className="space-y-3">
             <button className="w-full bg-white/10 rounded-xl py-3 px-4 text-sm font-semibold hover:bg-white/20 transition">
-              App Store
+              {lang === 'ar' ? 'متجر التطبيقات' : 'App Store'}
             </button>
             <button className="w-full bg-white/10 rounded-xl py-3 px-4 text-sm font-semibold hover:bg-white/20 transition">
-              Google Play
+              {lang === 'ar' ? 'جوجل بلاي' : 'Google Play'}
             </button>
           </div>
           <div className="flex gap-4 mt-6">
@@ -90,7 +97,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#e8453a] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
-                Coming Soon
+                {lang === 'ar' ? 'قريباً' : 'Coming Soon'}
               </span>
             </div>
             {/* TikTok */}
@@ -110,7 +117,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#e8453a] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
-                Coming Soon
+                {lang === 'ar' ? 'قريباً' : 'Coming Soon'}
               </span>
             </div>
             {/* Instagram */}
@@ -130,7 +137,7 @@ export default function Footer() {
                 </svg>
               </Link>
               <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#e8453a] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
-                Coming Soon
+                {lang === 'ar' ? 'قريباً' : 'Coming Soon'}
               </span>
             </div>
           </div>
@@ -139,7 +146,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
-        © 2026 Domyah Inc. All Rights Reserved.
+        {lang === 'ar' ? '© 2026 شركة دمية. جميع الحقوق محفوظة.' : '© 2026 Domyah Inc. All Rights Reserved.'}
       </div>
     </footer>
   );

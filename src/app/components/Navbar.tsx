@@ -43,7 +43,7 @@ export default function Navbar() {
                 height={40}
                 className="rounded-full"
               />
-              <span className="font-bold text-xl text-[#1b1464] uppercase tracking-wider">Domyah</span>
+              <span className="font-bold text-xl text-[#1b1464] uppercase tracking-wider">{lang === 'ar' ? 'دُمية' : 'Domyah'}</span>
             </Link>
 
             {/* Right side: Right Links + Cart + Hamburger */}

@@ -73,10 +73,10 @@ export default function Footer() {
           <h4 className="font-bold mb-4">{lang === 'ar' ? 'حمل التطبيق' : 'Download App'}</h4>
           <div className="space-y-3">
             <button className="w-full bg-white/10 rounded-xl py-3 px-4 text-sm font-semibold hover:bg-white/20 transition">
-              {lang === 'ar' ? 'متجر التطبيقات' : 'App Store'}
+              {lang === 'ar' ? 'آبل (iOS)' : 'Apple (iOS)'}
             </button>
             <button className="w-full bg-white/10 rounded-xl py-3 px-4 text-sm font-semibold hover:bg-white/20 transition">
-              {lang === 'ar' ? 'جوجل بلاي' : 'Google Play'}
+              {lang === 'ar' ? 'أندرويد' : 'Android'}
             </button>
           </div>
           <div className="flex gap-4 mt-6">

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "../context/LanguageContext";
 
 const featuresEn = [
@@ -101,6 +102,14 @@ export default function WhyChooseUs() {
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-12">
+          <Link
+            href="/product/domyah"
+            className="inline-block bg-[#e8453a] text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-red-600 transition animate-pulse-glow"
+          >
+            {lang === 'ar' ? 'اطلب الآن' : 'Order Now'}
+          </Link>
         </div>
       </div>
     </section>

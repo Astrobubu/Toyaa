@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function DomyahOS() {
@@ -12,7 +13,7 @@ export default function DomyahOS() {
         {/* Left column */}
         <div>
           <h2 className="text-3xl lg:text-4xl font-extrabold text-[#1b1464] mb-6">
-            {lang === 'ar' ? 'نظام تشغيل دمية™' : 'Domyah OS™'}
+            Domyah OS™
           </h2>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
             {lang === 'ar' 
@@ -42,6 +43,12 @@ export default function DomyahOS() {
               </p>
             </div>
           </div>
+          <Link
+            href="/product/domyah"
+            className="inline-block mt-8 bg-[#e8453a] text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-red-600 transition animate-pulse-glow"
+          >
+            {lang === 'ar' ? 'اطلب الآن' : 'Order Now'}
+          </Link>
         </div>
 
         {/* Right column */}

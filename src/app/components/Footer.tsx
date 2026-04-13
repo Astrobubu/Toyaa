@@ -29,23 +29,28 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Column 2 - About Us */}
+        {/* Column 2 - Explore */}
         <div>
-          <h4 className="font-bold mb-4">{lang === 'ar' ? 'معلومات عنا' : 'About Us'}</h4>
+          <h4 className="font-bold mb-4">{lang === 'ar' ? 'استكشف' : 'Explore'}</h4>
           <ul className="space-y-2 text-gray-400 text-sm">
             <li>
-              <Link href="#" className="hover:text-white transition">
-                {lang === 'ar' ? 'قصتنا' : 'Our Story'}
+              <Link href="/about" className="hover:text-white transition">
+                {lang === 'ar' ? 'من نحن' : 'About Us'}
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-white transition">
-                {lang === 'ar' ? 'الأسئلة الشائعة' : 'FAQs'}
+              <Link href="/product" className="hover:text-white transition">
+                {lang === 'ar' ? 'منتجاتنا' : 'Products'}
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-white transition">
-                {lang === 'ar' ? 'اتصل بنا' : 'Contact Us'}
+              <Link href="/how-it-works" className="hover:text-white transition">
+                {lang === 'ar' ? 'كيف تعمل' : 'How It Works'}
+              </Link>
+            </li>
+            <li>
+              <Link href="/blogs" className="hover:text-white transition">
+                {lang === 'ar' ? 'المدونة' : 'Blog'}
               </Link>
             </li>
           </ul>
@@ -55,6 +60,11 @@ export default function Footer() {
         <div>
           <h4 className="font-bold mb-4">{lang === 'ar' ? 'أشياء للكبار' : 'Grown Up Stuff'}</h4>
           <ul className="space-y-2 text-gray-400 text-sm">
+            <li>
+              <Link href="/about#contact" className="hover:text-white transition">
+                {lang === 'ar' ? 'اتصل بنا' : 'Contact Us'}
+              </Link>
+            </li>
             <li>
               <Link href="#" className="hover:text-white transition">
                 {lang === 'ar' ? 'سياسة الخصوصية' : 'Privacy Policy'}

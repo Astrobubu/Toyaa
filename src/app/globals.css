@@ -11,6 +11,7 @@
   --color-domyah-green: #c8e0c8;
   --color-domyah-gold: #f5b800;
   --font-sora: 'Sora', sans-serif;
+  --font-rubik: var(--font-rubik, 'Rubik', sans-serif);
 }
 
 html {
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sora);
+  font-family: var(--font-rubik), var(--font-sora);
   color: #2d1b69;
   background: #ffffff;
 }

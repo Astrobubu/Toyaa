@@ -4,7 +4,7 @@ const features = [
       <svg className="w-8 h-8 text-[#2d1b69]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
     ),
     title: "Interactive Learning",
-    description: "Toya blends fun with education, helping kids learn while they play.",
+    description: "Domyah blends fun with education, helping kids learn while they play.",
   },
   {
     icon: (
@@ -25,7 +25,7 @@ const features = [
       <svg className="w-8 h-8 text-[#2d1b69]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" /></svg>
     ),
     title: "Grows with Your Child",
-    description: "Toya evolves with new content as your child develops.",
+    description: "Domyah evolves with new content as your child develops.",
   },
   {
     icon: (
@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
     <section className="py-20 px-4 bg-[#8acdea]/20">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl lg:text-4xl font-extrabold text-[#1b1464] text-center mb-12">
-          Why Choose Toya?
+          Why Choose Domyah?
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature) => (

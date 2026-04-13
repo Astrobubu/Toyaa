@@ -5,9 +5,9 @@ import Image from "next/image";
 const steps = [
   {
     number: 1,
-    title: "Unbox Your Toya",
+    title: "Unbox Your Domyah",
     description:
-      "Inside you'll find your Toya plush, the Voice Box™ module, a USB-C charging cable, collectible stickers, and a quick start guide.",
+      "Inside you'll find your Domyah plush, the Voice Box™ module, 3 AA batteries, and a quick start guide.",
   },
   {
     number: 2,
@@ -19,25 +19,25 @@ const steps = [
     number: 3,
     title: "Insert the Voice Box™",
     description:
-      "Slide the Voice Box™ into the pocket inside your Toya plush. It clicks right in — no tools needed. The plush is designed with a hidden zippered compartment.",
+      "Slide the Voice Box™ into the pocket inside your Domyah plush. It clicks right in - no tools needed. The plush is designed with a hidden zippered compartment.",
   },
   {
     number: 4,
     title: "Pair via Bluetooth",
     description:
-      "Open the app, tap 'Connect', and Toya pairs automatically. The doll will say hello — that's when you know you're connected!",
+      "Open the app, tap 'Connect', and Domyah pairs automatically. The doll will say hello - that's when you know you're connected!",
   },
   {
     number: 5,
     title: "Customize the Experience",
     description:
-      "Choose Toya's voice, language, and personality. Set conversation boundaries, push learning topics, and configure alert preferences.",
+      "Choose Domyah's voice, language, and personality. Set conversation boundaries, push learning topics, and configure alert preferences.",
   },
   {
     number: 6,
     title: "Let the Magic Begin",
     description:
-      "Hand Toya to your child and watch the connection grow. Check the app for thought summaries, conversation highlights, and smart alerts.",
+      "Hand Domyah to your child and watch the connection grow. Check the app for thought summaries, conversation highlights, and smart alerts.",
   },
 ];
 
@@ -49,10 +49,10 @@ export default function HowItWorksPage() {
         {/* Hero */}
         <section className="bg-gradient-to-r from-[#f5b800] to-[#ffca1c] py-20 px-4 text-center">
           <h1 className="text-5xl font-extrabold text-[#2d1b69] mb-4 hover:scale-105 transition-transform duration-300">
-            How Toya Works
+            How Domyah Works
           </h1>
           <p className="text-xl text-[#2d1b69] max-w-2xl mx-auto opacity-80">
-            From unboxing to your child&apos;s first conversation — here&apos;s
+            From unboxing to your child&apos;s first conversation - here&apos;s
             everything you need to know.
           </p>
         </section>
@@ -87,7 +87,7 @@ export default function HowItWorksPage() {
 
         {/* CTA */}
         <section className="bg-[#2d1b69] text-white py-16 text-center px-4">
-          <h2 className="text-4xl font-extrabold mb-6 hover:scale-105 transition-transform duration-300">Ready to Meet Toya?</h2>
+          <h2 className="text-4xl font-extrabold mb-6 hover:scale-105 transition-transform duration-300">Ready to Meet Domyah?</h2>
           <a
             href="#products"
             className="inline-block bg-[#e8453a] px-8 py-4 rounded-2xl font-bold text-lg hover:bg-red-600 transition-colors animate-pulse-glow"

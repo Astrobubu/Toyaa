@@ -9,18 +9,18 @@ export default function ParentalFeatures() {
           You&apos;re Always in the Loop
         </h2>
         <p className="text-center text-gray-300 text-lg mb-16 max-w-2xl mx-auto">
-          Toya isn&apos;t just a toy — it&apos;s a parenting partner. Guide your child&apos;s learning, understand their world, and stay informed.
+          Domyah isn&apos;t just a toy - it&apos;s a parenting partner. Guide your child&apos;s learning, understand their world, and stay informed.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Push Lessons */}
+          {/* Value-Based Nudging */}
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 transition">
             <div className="bg-[#fcc612] rounded-xl w-14 h-14 flex items-center justify-center mb-6">
               <svg className="w-7 h-7 text-[#2d1b69]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" /></svg>
             </div>
-            <h3 className="font-bold text-xl mb-3">Push Lessons &amp; Ideas</h3>
+            <h3 className="font-bold text-xl mb-3">Value-Based Nudging</h3>
             <p className="text-gray-300 leading-relaxed">
-              Want your child to learn about dinosaurs, practice math, or explore kindness? Push topics directly through the app and Toya weaves them naturally into play.
+              Gently nudge your child towards specific learning topics or core values like kindness, patience, and curiosity. Domyah weaves these lessons naturally into every conversation.
             </p>
           </div>
 
@@ -31,7 +31,7 @@ export default function ParentalFeatures() {
             </div>
             <h3 className="font-bold text-xl mb-3">Thought Summaries</h3>
             <p className="text-gray-300 leading-relaxed">
-              After each session, get a clear summary of what your child talked about — their questions, curiosities, and what&apos;s on their mind. Stay connected to their inner world.
+              After each session, get a clear summary of what your child talked about - their questions, curiosities, and what&apos;s on their mind. Stay connected to their inner world.
             </p>
           </div>
 
@@ -42,14 +42,14 @@ export default function ParentalFeatures() {
             </div>
             <h3 className="font-bold text-xl mb-3">Smart Alerts</h3>
             <p className="text-gray-300 leading-relaxed">
-              If Toya detects concerning language, dangerous thoughts, signs of bullying, or inappropriate content, you get an instant alert. Peace of mind, always on.
+              If Domyah detects concerning language, dangerous thoughts, signs of bullying, or inappropriate content, you get an instant alert. Peace of mind, always on.
             </p>
           </div>
         </div>
 
         <div className="mt-12 text-center">
           <p className="text-gray-400 text-sm max-w-xl mx-auto">
-            All data is encrypted and private. Only you see your child&apos;s summaries and alerts. Toya is KidSafe certified and COPPA compliant.
+            All data is encrypted and private. Only you see your child&apos;s summaries and alerts. Your child&apos;s safety and privacy are our top priorities.
           </p>
         </div>
       </div>

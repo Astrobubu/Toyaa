@@ -2,14 +2,14 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-toya-navy: #2d1b69;
-  --color-toya-red: #e8453a;
-  --color-toya-pink: #fdd5d8;
-  --color-toya-peach: #fdb698;
-  --color-toya-yellow: #ffca1c;
-  --color-toya-blue: #7ec8e3;
-  --color-toya-green: #c8e0c8;
-  --color-toya-gold: #f5b800;
+  --color-domyah-navy: #2d1b69;
+  --color-domyah-red: #e8453a;
+  --color-domyah-pink: #fdd5d8;
+  --color-domyah-peach: #fdb698;
+  --color-domyah-yellow: #ffca1c;
+  --color-domyah-blue: #7ec8e3;
+  --color-domyah-green: #c8e0c8;
+  --color-domyah-gold: #f5b800;
   --font-sora: 'Sora', sans-serif;
 }
 
@@ -55,8 +55,24 @@ body {
   to { transform: translateX(0); opacity: 1; }
 }
 
-.animate-float:hover {
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+.animate-float-hover:hover {
   animation: float 2s ease-in-out infinite;
+}
+
+.animate-slide-right {
+  animation: slide-right 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out forwards;
 }
 
 .animate-pulse-glow {

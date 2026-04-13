@@ -4,29 +4,24 @@ import { useState } from "react";
 
 const items = [
   {
-    title: "Toya Smart Plush",
-    desc: "A soft, cuddly plush toy made with child-safe, non-toxic materials. Machine-washable once you remove the Voice Box. Built to survive countless hugs and adventures.",
+    title: "Domyah Smart Plush",
+    desc: "A soft, cuddly plush toy made with child-safe, non-toxic materials. Handcrafted and built to survive countless hugs and adventures.",
     img: "/images/hero-2.jpg",
   },
   {
-    title: "Toya Voice Box\u2122",
-    desc: "The brain of Toya \u2014 a compact, cloud-connected module that slides into a hidden pocket inside the plush. Contains the processor, speaker, microphone, and rechargeable battery.",
+    title: "Domyah Voice Box\u2122",
+    desc: "The brain of Domyah \u2014 a compact, cloud-connected module that slides into a hidden pocket inside the plush. Contains the processor, speaker, microphone, and a compartment for 3 AA batteries.",
     img: "/images/why.png",
   },
   {
-    title: "USB-C Cable & Adapter",
-    desc: "Everything you need to keep Toya charged and ready. A full charge via USB-C gives hours of uninterrupted playtime. Just plug in, charge up, and go.",
+    title: "3 AA Batteries",
+    desc: "Everything you need to get started right away. 3 AA batteries are enough to power the magic for weeks of playtime. Easy to replace when needed.",
     img: "/images/hero-4.webp",
   },
   {
     title: "Quick Start Guide",
     desc: "A simple, illustrated guide to get you set up in minutes. From inserting the Voice Box to pairing the app \u2014 we made it foolproof.",
     img: "/images/father-daughter.webp",
-  },
-  {
-    title: "Collectible Stickers",
-    desc: "A sheet of fun Toya character stickers for your child to decorate their stuff. Because every unboxing should feel special.",
-    img: "/images/hero-3.jpg",
   },
 ];
 

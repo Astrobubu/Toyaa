@@ -16,7 +16,7 @@ const posts = [
     tag: "Emotional Intelligence",
     date: "Mar 10, 2026",
     description:
-      "When children talk about their feelings with Toya, they practice emotional vocabulary and self-regulation. Learn how AI conversations build empathy.",
+      "When children talk about their feelings with Domyah, they practice emotional vocabulary and self-regulation. Learn how AI conversations build empathy.",
     image: "/images/hero-2.jpg",
   },
   {
@@ -36,11 +36,11 @@ const posts = [
     image: "/images/hero-4.webp",
   },
   {
-    title: "Teaching Through Play: Pushing Lessons via Toya",
+    title: "Teaching Through Play: Pushing Lessons via Domyah",
     tag: "Parenting",
     date: "Feb 20, 2026",
     description:
-      "Parents can guide learning by pushing topics through the app. Want to teach kindness? Math? Space? Toya weaves it into conversation.",
+      "Parents can guide learning by pushing topics through the app. Want to teach kindness? Math? Space? Domyah weaves it into conversation.",
     image: "/images/father-daughter.webp",
   },
   {
@@ -56,7 +56,7 @@ const posts = [
     tag: "Wellness",
     date: "Feb 8, 2026",
     description:
-      "How smart physical toys like Toya offer the benefits of technology without the downsides of screen addiction. A healthier alternative.",
+      "How smart physical toys like Domyah offer the benefits of technology without the downsides of screen addiction. A healthier alternative.",
     image: "/images/hero-1.webp",
   },
   {
@@ -64,7 +64,7 @@ const posts = [
     tag: "Development",
     date: "Feb 1, 2026",
     description:
-      "Children who practice speaking with Toya show measurable improvements in vocabulary, confidence, and willingness to express themselves.",
+      "Children who practice speaking with Domyah show measurable improvements in vocabulary, confidence, and willingness to express themselves.",
     image: "/images/hero-2.jpg",
   },
   {

@@ -10,12 +10,12 @@ export default function Footer() {
           <div className="flex items-center gap-2 mb-4">
             <Image
               src="/images/logo.png"
-              alt="Toya Logo"
+              alt="Domyah Logo"
               width={40}
               height={40}
               className="rounded-full"
             />
-            <span className="text-xl font-bold">Toya</span>
+            <span className="text-xl font-bold">Domyah</span>
           </div>
           <p className="text-gray-400 text-sm">
             Your child&apos;s smart best friend that talks, learns, and grows with them.
@@ -139,7 +139,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
-        © 2026 Toya Inc. All Rights Reserved.
+        © 2026 Domyah Inc. All Rights Reserved.
       </div>
     </footer>
   );

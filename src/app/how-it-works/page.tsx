@@ -13,7 +13,7 @@ const steps = [
     number: 2,
     title: "Download the App",
     description:
-      "Grab the Toya app from the App Store or Google Play. Create your parent account and set up your child's profile with their name, age, and interests.",
+      "Grab the Domyah app from the App Store or Google Play. Create your parent account and set up your child's profile with their name, age, and interests.",
   },
   {
     number: 3,

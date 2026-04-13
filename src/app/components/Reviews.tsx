@@ -9,19 +9,19 @@ const reviews = [
   {
     name: "Alice Johnson",
     img: "/images/rev3.jpg",
-    text: "I\u2019ve been using Toya products for a few months now, and I can confidently say they are top-notch! The quality is exceptional, and the design is both modern and functional. Every piece feels thoughtfully crafted.",
+    text: "I\u2019ve been using Domyah products for a few months now, and I can confidently say they are top-notch! The quality is exceptional, and the design is both modern and functional. Every piece feels thoughtfully crafted.",
     rating: 5,
   },
   {
     name: "Charlie Brown",
     img: "/images/rev2.jpg",
-    text: "As a busy parent, I\u2019m always looking for products that simplify my life, and Toya has delivered! Their innovative solutions have made such a difference in our household. Toya has quickly become a brand I trust!",
+    text: "As a busy parent, I\u2019m always looking for products that simplify my life, and Domyah has delivered! Their innovative solutions have made such a difference in our household. Domyah has quickly become a brand I trust!",
     rating: 5,
   },
   {
     name: "David Miller",
     img: "/images/rev1.jpg",
-    text: "Toya\u2019s customer service is truly outstanding. Their team responded promptly and helped me resolve my issue with a friendly attitude. It\u2019s refreshing to see a company that genuinely cares about its customers.",
+    text: "Domyah\u2019s customer service is truly outstanding. Their team responded promptly and helped me resolve my issue with a friendly attitude. It\u2019s refreshing to see a company that genuinely cares about its customers.",
     rating: 5,
   },
 ];

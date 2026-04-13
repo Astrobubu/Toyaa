@@ -4,7 +4,7 @@ import BuiltForFun from "./components/BuiltForFun";
 import WhatsInTheBox from "./components/WhatsInTheBox";
 import HowItWorks from "./components/HowItWorks";
 import WhyChooseUs from "./components/WhyChooseUs";
-import ToyaOS from "./components/ToyaOS";
+import DomyahOS from "./components/DomyahOS";
 import RelatedProducts from "./components/RelatedProducts";
 import ParentalFeatures from "./components/ParentalFeatures";
 import SmallCompanyNotice from "./components/SmallCompanyNotice";
@@ -57,7 +57,7 @@ export default function Home() {
         <CoreBanner />
         <WhyChooseUs />
         <ParentalFeatures />
-        <ToyaOS />
+        <DomyahOS />
         <SmallCompanyNotice />
         <RelatedProducts />
       </main>

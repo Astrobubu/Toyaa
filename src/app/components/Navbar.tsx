@@ -32,12 +32,12 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-2 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hover-scale">
               <Image
                 src="/images/logo.png"
-                alt="Toya Logo"
+                alt="Domyah Logo"
                 width={40}
                 height={40}
                 className="rounded-full"
               />
-              <span className="font-bold text-xl text-[#1b1464] uppercase tracking-wider">Toya</span>
+              <span className="font-bold text-xl text-[#1b1464] uppercase tracking-wider">Domyah</span>
             </Link>
 
             {/* Right side: Right Links + Cart + Hamburger */}
@@ -47,6 +47,7 @@ export default function Navbar() {
               </div>
 
               <div className="flex items-center gap-4">
+              <div id="google_translate_element" className="mr-2"></div>
               {/* Cart Icon */}
               <button
                 aria-label="Shopping cart"

@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-export default function ToyaOS() {
+export default function DomyahOS() {
   return (
     <section className="py-20 px-4 bg-[#c4dfd7]/30">
       <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 items-center">
         {/* Left column */}
         <div>
           <h2 className="text-3xl lg:text-4xl font-extrabold text-[#1b1464] mb-6">
-            Toya OS™
+            Domyah OS™
           </h2>
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Powered by our proprietary Toya OS™, every conversation is safe, age-appropriate, and designed to spark curiosity. Our system learns your child&apos;s interests and adapts to provide the most engaging and educational experience possible.
+            Powered by our proprietary Domyah OS™, every conversation is safe, age-appropriate, and designed to spark curiosity. Our system learns your child&apos;s interests and adapts to provide the most engaging and educational experience possible.
           </p>
           {/* Safety & Learning */}
           <div className="flex items-center gap-4 bg-white rounded-2xl p-4 w-fit">
@@ -39,7 +39,7 @@ export default function ToyaOS() {
         <div className="mt-8 lg:mt-0">
           <Image
             src="/images/why.png"
-            alt="Toya OS"
+            alt="Domyah OS"
             width={500}
             height={500}
             className="rounded-[2rem]"

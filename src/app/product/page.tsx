@@ -60,7 +60,7 @@ export default function ProductsPage() {
           </div>
 
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto text-lg">
-            We are working hard behind the scenes to bring more amazing friends and accessories to the Toya family. Stay tuned!
+            We are working hard behind the scenes to bring more amazing friends and accessories to the Domyah family. Stay tuned!
           </p>
 
           {/* Coming Soon Grid */}

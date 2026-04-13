@@ -9,7 +9,7 @@ export default function AboutPage() {
       <main className="pt-16">
         {/* Hero Banner */}
         <section className="bg-gradient-to-r from-[#2d1b69] to-[#4a2d8a] text-white py-24 px-4 text-center">
-          <h1 className="text-5xl font-extrabold mb-4 hover:scale-105 transition-transform duration-300">About Toya</h1>
+          <h1 className="text-5xl font-extrabold mb-4 hover:scale-105 transition-transform duration-300">About Domyah</h1>
           <p className="text-xl max-w-2xl mx-auto">
             We&apos;re on a mission to make childhood more imaginative, connected, and fun.
           </p>
@@ -119,7 +119,7 @@ export default function AboutPage() {
         {/* Join Us */}
         <section className="bg-gradient-to-r from-[#2d1b69] to-[#4a2d8a] text-white py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6 hover:scale-105 transition-transform duration-300">Join the Toya Family</h2>
+            <h2 className="text-3xl font-bold mb-6 hover:scale-105 transition-transform duration-300">Join the Domyah Family</h2>
             <p className="text-xl opacity-90 mb-8">
               We are a small startup on a big mission. Every Domyah is made to order with love.
             </p>

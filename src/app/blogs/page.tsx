@@ -85,7 +85,7 @@ export default function BlogsPage() {
         {/* Header */}
         <section className="py-12 px-4 text-center">
           <h1 className="text-4xl font-extrabold text-[#2d1b69] hover:scale-105 transition-transform duration-300">
-            The Toya Blog
+            The Domyah Blog
           </h1>
           <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
             Tips, research, and stories about raising creative, emotionally

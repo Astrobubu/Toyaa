@@ -23,7 +23,7 @@ export default function Home() {
       <Navbar />
       <main className="pt-16">
         {/* Landing Hero */}
-        <section className="relative min-h-[80vh] flex items-center bg-[#fdd5d8]/30 overflow-hidden">
+        <section className="relative min-h-[calc(100svh-4rem)] flex items-center bg-[#fdd5d8]/30 overflow-hidden">
           <div className="max-w-6xl mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-12 items-center py-20 relative z-10">
             <div className="animate-slide-right">
               <h1 className="text-5xl lg:text-7xl font-extrabold text-[#1b1464] mb-6 leading-tight">

@@ -35,6 +35,16 @@ export default function RootLayout({
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           })(window, document, "clarity", "script", "xe2vvop4mg");`}
         </Script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-6KV4SKY9ER"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-6KV4SKY9ER');`}
+        </Script>
         <LanguageProvider>
           <CartProvider>
             {children}
